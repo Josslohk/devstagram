@@ -7,6 +7,8 @@
         <title>Devstagram - @yield('titulo')</title>
         @vite('resources/css/app.css')
         @vite('resources/js/app.js')
+        @vite('node_modules/croppie/croppie.css')
+        @vite('node_modules/croppie/croppie.js')
         
        
         <style>

@@ -9,8 +9,7 @@
 @endpush
 
 @section('contenido')
-    @vite(['resources/css/app.css', 'resources/js/app.js', 'node_modules/croppie/croppie.css', 'node_modules/croppie/croppie.js'])
-    
+
     <div class="md:flex md:justify-center">
         <div class="md:w-1/2 px-10">
             <form action="{{ route('perfil.image.store') }}" id="dropzonePerfil" method="POST" enctype="multipart/form-data"

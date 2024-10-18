@@ -9,7 +9,6 @@
 @endpush
 
 @section('contenido')
-    @vite(['resources/css/app.css', 'resources/js/app.js', 'node_modules/croppie/croppie.css', 'node_modules/croppie/croppie.js'])
     <div class="md:flex md:items-center">
         <div class="md:w-1/2 px-10">
             {{-- <form action=" {{ route('imagenes.store') }}" id="dropzone" method="POST" enctype="multipart/form-data" class="dropzone border-dashed border-2 w-full h-96 rounded flex flex-col justify-center items-center">
