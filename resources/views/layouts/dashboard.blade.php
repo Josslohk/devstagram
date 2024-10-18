@@ -43,17 +43,17 @@
                 @auth
                     @if ($user->id !== auth()->user()->id)
                         @if ( !$user->siguiendo(auth()->user()))
-                            <form action="{{ route('users.follow', $user) }}" method="POST">
+                            <form action="{{ route('users.follow', $user) }}" method="POST" class="w-full">
                                 @csrf
                                 <input type="submit" value="Seguir"
-                                class="bg-blue-600 text-white uppercase rounded-lg px-4 py-1 text-xs font-bold cursor-pointer">
-                            </form>
+                                    class="bg-sky-600 hover:bg-sky-700 transition-colors cursor-pointer uppercase font-bold w-1/2 p-1 text-white rounded-lg" />
+                            </form> 
                         @else
-                            <form action="{{ route('users.unfollow', $user) }}" method="POST">
+                            <form action="{{ route('users.unfollow', $user) }}" method="POST" class="w-full">
                                 @method('DELETE')
                                 @csrf
                                 <input type="submit" value="Dejar de Seguir"
-                                class="bg-red-600 text-white uppercase rounded-lg px-4 py-1 text-xs font-bold cursor-pointer">
+                                    class="bg-red-600 hover:bg-red-700 transition-colors cursor-pointer uppercase font-bold w-1/2 p-1 text-white rounded-lg" />
                             </form>
                         @endif
                     @endif

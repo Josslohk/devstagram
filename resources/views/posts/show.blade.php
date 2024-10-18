@@ -24,7 +24,9 @@
                 
             </div>
             <div class="shadow bg-white p-5 mb-5">
-                <p class="font-bold">{{ $post->user->username }}</p>
+                <a href="{{ route('posts.index', $post->user) }}">
+                    <p class="font-bold">{{ $post->user->username }}</p>
+                </a>
                 <p class="text-sm text-gray-500">
                     {{ $post->created_at->diffForHumans() }}
                 </p>
