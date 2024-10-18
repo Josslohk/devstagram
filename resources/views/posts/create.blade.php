@@ -6,6 +6,7 @@
 
 @push('styles')
     <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.min.css" type="text/css" />
 @endpush
 
 @section('contenido')
@@ -45,7 +46,7 @@
                 <!-- z-50 para asegurar que esté al frente -->
                 <div class="relative top-20 mx-auto p-5 border w-3/4 shadow-lg rounded-md bg-white">
                     <h3 class="font-black text-center text-2xl mb-10">Ajusta la imagen</h3>
-                    <div id="croppie-demo" class="h-96 w-full">
+                    <div id="croppie-demo" class="w-full">
                     </div>
                     <div class="flex justify-center flex-col sm:flex-row">
                         <button id="crop-btn"
@@ -106,3 +107,6 @@
         </div>
     </div>
 @endsection
+@push('Scripts')
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.min.js"></script>
+@endpush

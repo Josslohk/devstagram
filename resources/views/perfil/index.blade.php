@@ -6,6 +6,7 @@
 
 @push('styles')
     <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.min.css" type="text/css" />
 @endpush
 
 @section('contenido')
@@ -27,9 +28,9 @@
                 class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full hidden z-20">
                 <div class="relative top-20 mx-auto p-5 border w-3/4 shadow-lg rounded-md bg-white">
                     <h3 class="font-black text-center text-2xl mb-10">Ajusta la imagen</h3>
-                    <div id="croppie-demo" class="h-96 w-full">
+                    <div id="croppie-demo" class="w-full">
                     </div>
-                    <div class="flex justify-center flex-col sm:flex-row">
+                    <div class="flex justify-center flex-col sm:flex-row ">
                         <button id="crop-btn"
                             class="bg-sky-600 hover:bg-sky-700 transition-colors cursor-pointer uppercase font-bold w-full lg:w-1/4 p-3 text-white rounded-lg m-1">Recortar
                             y Subir</button>
@@ -84,3 +85,6 @@
         </div>
     </div>
 @endsection
+@push('Scripts')
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.5/croppie.min.js"></script>
+@endpush

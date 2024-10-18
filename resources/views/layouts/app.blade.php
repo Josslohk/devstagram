@@ -7,8 +7,7 @@
         <title>Devstagram - @yield('titulo')</title>
         @vite('resources/css/app.css')
         @vite('resources/js/app.js')
-        @vite('node_modules/croppie/croppie.css')
-        @vite('node_modules/croppie/croppie.js')
+        
         
        
         <style>
@@ -86,6 +85,9 @@
         @livewireScripts()
         {{-- <script src="{{ asset('js/tabs.js') }}"></script>
         @stack('other-scripts') --}}
+        
+
+        @stack('Scripts')
     </body>
     
     </html>
