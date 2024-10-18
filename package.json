@@ -12,5 +12,10 @@
         "postcss": "^8.4.32",
         "tailwindcss": "^3.4.0",
         "vite": "^5.0.0"
+    },
+    "dependencies": {
+        "cropperjs": "^1.6.2",
+        "croppie": "^2.6.5",
+        "dropzone": "^6.0.0-beta.2"
     }
 }
